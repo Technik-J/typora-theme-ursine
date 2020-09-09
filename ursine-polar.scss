@@ -6,14 +6,16 @@ $umbra: false;
 
 // Important colors for writing (text, links, code, etc.)
 $bg-color: #fbfbfb;
-$text-color: #333;
+$text-color: #000000;
 $md-char-color: #b4b4b4;
 $meta-content-color: #757575;
 $link-color: #db4d52;
 $mark-color: #c7f661d3;
 $quote-color: #827676;
-$code-bg-color: #fafafa;
-$code-border-color: #0000001a;
+$code-bg-color: #282a36;
+$code-border-color: #ffffff26;
+$inline-code-bg-color: #fafafa;
+$inline-code-border-color: #0000001a;
 $kbd-bg-color: #f7f7f7;
 $selected-text-bg-color: #fbb6b7;
 
@@ -77,9 +79,14 @@ $mermaid-task-crit-border: #d45c62;
 // IMPORTS //
 
 @import 'ursine-umbra';
-@import 'ursine/code-3024-day';
+@import 'ursine/code-dracula';
 
 // STYLING //
+
+code {
+  border: 1px solid $inline-code-border-color;
+  background: $inline-code-bg-color;
+}
 
 // Tables
 table tr:nth-child(2n) {

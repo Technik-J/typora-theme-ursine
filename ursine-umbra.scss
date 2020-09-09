@@ -7,7 +7,7 @@ $umbra: true !default;
 // Font variables
 $paragraph-font: "'Avenir Next LT Pro', 'Lato', sans-serif";
 $header-font: "'Adelle', 'Times New Roman', serif";
-$monospace-font: "'Fira Mono', 'Cousine', 'Consolas', monospace";
+$monospace-font: "'Hack', 'Cousine', 'Consolas', monospace";
 
 // Cyrillic font support
 $cyrillic-font: false !default;
@@ -19,8 +19,8 @@ $cyrillic-font: false !default;
 // Alternative font support (supports Cyrillic, Greek, Vietnamese, among others)
 $alt-font: false !default;
 @if $alt-font {
-  $paragraph-font: "'Open Sans', 'Lato', sans-serif";
-  $header-font: "'Roboto Slab', 'Times New Roman', serif";
+  $paragraph-font: "'Roboto', 'Arial', sans-serif";
+  $header-font: "'Adelle Cyrillic', 'Roboto Slab', 'Times New Roman', serif";
 }
 
 // Important colors for writing (text, links, code, etc.)
@@ -323,7 +323,7 @@ html, body {
   font-family: unquote($paragraph-font);
 }
 
-body { font-size: 1em; }
+body { font-size: 1.06em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: unquote($header-font);
@@ -361,7 +361,7 @@ code,
 .md-fences,
 tt {
   font-family: unquote($monospace-font);
-  font-size: 1rem;
+  font-size: .94rem;
 }
 
 code {
@@ -403,7 +403,7 @@ td, th {
 #write {
   position: static;
   width: 90%;
-  max-width: 700px;
+  max-width: 900px;
   line-height: 1.6;
 
   transform: none;    // Windows-specific fix

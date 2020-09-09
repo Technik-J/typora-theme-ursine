@@ -6,7 +6,7 @@
 // Author:     Michael Kaminsky (http://github.com/mkaminsky11)
 // Original dracula color scheme by Zeno Rocha (https://github.com/zenorocha/dracula-theme)
 
-@if $umbra {
+@if not $umbra {
   .cm-s-inner {
     padding: .25rem;
     border: 1px solid $code-border-color !important;
@@ -90,6 +90,7 @@
     background: #282a36;
     border: 1px solid $accent-color;
     border-top: 0;
+    color: #ddd;
   }
 
   .auto-suggest-container {
